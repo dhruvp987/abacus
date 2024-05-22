@@ -1,0 +1,20 @@
+body {
+    padding-top: 5%;
+}
+
+#abacus-container {
+    max-width: 9in;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wire {
+    width: auto;
+    height: 10px;
+    flex: auto;
+    background-color: black;
+}
