@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,15 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
 </head>
+
 <body>
     <div class="abacus-container">
         <div class="wire-beads-container">
             <div class="wire"></div>
-            <div class="bead"></div>
+            <div class="bead" onmousedown="isMouseDown=true;" onmousemove="moveBeadX(event, this)"
+                onmouseup="isMouseDown=false;"></div>
         </div>
     </div>
 </body>
+
 </html>
