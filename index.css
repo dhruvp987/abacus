@@ -2,15 +2,33 @@ body {
     padding-top: 5%;
 }
 
-#abacus-container {
+.abacus-container {
     max-width: 9in;
-    width: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
+.wire-beads-container {
+    height: 50px; /* Height of the bead */
+}
+
 .wire {
-    width: auto;
     height: 10px;
+    
+    /* Vertically center the wire */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
     background-color: black;
+    z-index: 0;
+}
+
+.bead {
+    width: 25px;
+    height: 50px;
+    position: relative;
+    top: -10px; /* Negative of the height of the wire */
+    background-color: pink;
+    z-index: 1;
 }
