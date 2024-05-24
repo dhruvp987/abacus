@@ -13,8 +13,8 @@
     <div class="abacus-container">
         <div class="wire-beads-container">
             <div class="wire"></div>
-            <div class="bead" onmousedown="isMouseDown=true;" onmousemove="moveBeadX(event, this)"
-                onmouseup="isMouseDown=false;"></div>
+            <div class="bead" onpointerdown="this.setPointerCapture(event.pointerId);" onpointermove="moveBeadX(event, this)"
+                onpointerup="this.releasePointerCapture(event.pointerId);"></div>
         </div>
     </div>
 </body>
