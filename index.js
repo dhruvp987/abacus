@@ -7,7 +7,7 @@ function moveBeadX(event, bead) {
         if (relativePos < 0) {
             bead.style.left = "0px";
         } else if (relativePos > (rightBoundary = bead.parentElement.clientWidth - bead.clientWidth)) {
-            bead.style.left = rightBoundary - beadHalfWidth;
+            bead.style.left = `${rightBoundary - beadHalfWidth}px`;
         } else {
             bead.style.left = `${relativePos}px`;
         }
