@@ -31,4 +31,5 @@ body {
     top: -10px; /* Negative of the height of the wire */
     background-color: pink;
     z-index: 1;
+    touch-action: none;
 }
